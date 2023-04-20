@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 
+/**
+ * Functional component for a weather app that allows users to search for a
+ * city and get weather information.
+ *
+ * @returns {JSX.Element} The weather app UI with search bar, weather data, and error message.
+ */
 function App() {
   const [city, setCity] = useState('');
   const [weatherData, setWeatherData] = useState(null);
