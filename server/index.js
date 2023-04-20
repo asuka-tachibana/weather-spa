@@ -1,8 +1,13 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+
+// Add this line to use the cors middleware
+app.use(cors());
+
 const port = process.env.PORT || 3001;
 const API_KEY = process.env.WEATHER_API_KEY;
 
